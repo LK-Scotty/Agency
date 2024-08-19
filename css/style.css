@@ -176,6 +176,15 @@ p,h1,h2,h3,h4,h5,a,pre,td,th{
     overflow-y: scroll;
 }
 
+/*non-base*/
+#videyo{
+    width: 100%;
+    float: left;
+    margin-top: 62%;
+    filter: brightness(0.5) sepia(0.2);
+}
+/*     */
+
 @media only screen and (max-width : 900px) {
     .top-slogan{
         left: 1%;
