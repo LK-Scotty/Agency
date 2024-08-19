@@ -1,0 +1,210 @@
+@font-face {
+    font-family: Avenir;
+    src: url("fonts/avenir-next-regular.woff"); 
+}
+@font-face {
+    font-family: Vogue;
+    src: url("fonts/Vogue.ttf"); 
+}
+p,h1,h2,h3,h4,h5,a,pre,td,th{
+    font-family: Avenir;
+}
+.appear-frombottom{
+    transition: 0.6s ease-out;
+}
+.appear-opacity{
+    transition: 0.6s ease-out;
+    opacity: 0;
+}
+.amazing-name{
+    line-height: 1.1;
+    color:black;
+    pointer-events: none;
+    font-size: 69px;
+    position: fixed;
+    top:46%;
+    left: 1%;
+    transform: translate(0,-50%);
+    z-index: 0;
+    height: 76px;
+    overflow-y: hidden;
+}
+.amazing-name span{
+    margin-top: 69px;
+    float: left;
+}
+#menu-btn{
+    height: 17px;
+    overflow-y: hidden;
+}
+#menu-btn span{
+    float: left;
+}
+#menu-btn .m1,#menu-btn .m5{
+    transition: 0.2s ease-out;
+}
+#menu-btn .m2,#menu-btn .m6{
+    transition: 0.5s ease-out;
+}
+#menu-btn .m3,#menu-btn .m7{
+    transition: 0.8s ease-out;
+}
+#menu-btn .m4,#menu-btn .m8{
+    transition: 1.1s ease-out;
+}
+#menu-btn .m9,#menu-btn .m10{
+    transition: 1.4s ease-out;
+}
+#menu-btn br{
+    line-height: 0;
+}
+#menu-btn .m5,#menu-btn .m6,#menu-btn .m7,#menu-btn .m8,#menu-btn .m10{
+    margin-top:-16px;
+    transform: translate(0,16px);
+}
+#menu-btn{
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1;
+    color: black;
+    position: fixed;
+    top:50%;
+    right: 1%;
+    transform: translate(0,-50%);
+    text-decoration: none;
+    z-index: 9;
+}
+.burger{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    z-index: 7;
+    background-color: #111;
+}
+.burger-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    z-index: 8;
+    display: none;
+}
+.amazing-name-burger{
+    line-height: 1.1;
+    color:white;
+    pointer-events: none;
+    font-size: 43px;
+    position: fixed;
+    top:46%;
+    left: 1%;
+    transform: translate(0,-50%);
+    z-index: 0;
+    height: 51px;
+    overflow-y: hidden;
+}
+.amazing-name-burger span{
+    margin-top: 45px;
+    float: left;
+    transition: 0.4s ease-out;
+}
+.burger-footer{
+    width: 98%;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    text-align: right;
+    opacity: 0;
+    transition: 0.4s ease-out;
+}
+.burger-footer p{
+    color: white;
+    font-size: .875rem;
+    line-height: 1.4;
+}
+.burger-footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    float: left;
+    text-align: center;
+    height: 20px;
+    overflow-y: hidden;
+    margin-bottom: 10px;
+}
+.burger-footer a:hover span{
+    margin-top: -20px;
+}
+.burger-footer a span{
+    float: left;
+    transition: 0.4s ease-out;
+}
+.top-slogan{
+    position: fixed;
+    z-index: 0;
+    left: 50%;
+    top:1%;
+    font-weight: bold;
+    transform: translate(0,-50%);
+    font-size: 1.1rem;
+}
+.clock{
+    position: fixed;
+    z-index: 0;
+    top: 1%;
+    right: 1%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 1.1;
+    font-family: Vogue;
+    color: #808080;
+    transform: translate(0,-50%);
+}
+#content{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width : 900px) {
+    .top-slogan{
+        left: 1%;
+        transform: none;
+        top: 18px;
+        margin: 0;
+    }
+    .clock{
+        display: none;
+    }
+    #menu-btn{
+        top:18px;
+        transform: none;
+    }
+    .amazing-name{
+        width: 98%;
+        left: 1%;
+        font-size: 32px;
+    }
+    .amazing-name span{
+        width: 100%;
+        text-align: center;
+    }
+    .amazing-name-burger{
+        display: none;
+    }
+    .burger-footer p{
+        text-align: center;
+        float: left;
+        width: 100%;
+    }
+}
